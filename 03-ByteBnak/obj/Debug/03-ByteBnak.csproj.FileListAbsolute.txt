@@ -1,0 +1,7 @@
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\bin\Debug\03-ByteBnak.exe.config
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\bin\Debug\03-ByteBnak.exe
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\bin\Debug\03-ByteBnak.pdb
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\obj\Debug\03-ByteBnak.csproj.SuggestedBindingRedirects.cache
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\obj\Debug\03-ByteBnak.csproj.CoreCompileInputs.cache
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\obj\Debug\03-ByteBnak.exe
+D:\Programacao\CSharp\ByteBank\03-ByteBnak\obj\Debug\03-ByteBnak.pdb
