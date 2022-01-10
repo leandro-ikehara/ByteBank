@@ -1,5 +1,6 @@
 package br.com.alura.bytebank.herdado.conta.entidade;
 
+import br.com.alura.bytebank.herdado.conta.exception.SaldoInsuficienteException;
 import br.com.alura.bytebank.herdado.conta.interfaces.Tributavel;
 
 // Os contrutores não são herdados da classe Conta
@@ -12,7 +13,7 @@ public class ContaCorrente extends Conta implements Tributavel
 
     @Override
 //    public boolean saca(double valor)
-    public void saca(double valor)
+    public void saca(double valor) throws SaldoInsuficienteException
     {
         double valorASacar = valor + 0.2;
 //        return super.saca(valorASacar);
