@@ -1,5 +1,7 @@
 package br.com.alura.bytebank.herdado.conta.entidade;
 
+import br.com.alura.bytebank.herdado.conta.exception.SaldoInsuficienteException;
+
 public abstract class Conta {
     protected double saldo;
     private int agencia;
@@ -26,22 +28,28 @@ public abstract class Conta {
 //        this.saldo = this.saldo + valor;
 //    }
 
-    public boolean saca(double valor){
-        if(saldo >= valor){
-            saldo = saldo - valor;
-            return true;
-        } else {
-            return false;
+//    public boolean saca(double valor){
+    public void saca(double valor){
+//        if(saldo >= valor){
+//            saldo = saldo - valor;
+//            return true;
+//        } else {
+//            return false;
+        if(this.saldo < valor){
+            throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
+
         }
+        this.saldo -= valor;
     }
 
-    public boolean transfere(double valor, Conta destino) {
-        if (this.saca(valor))
-        {
-            destino.deposita(valor);
-            return true;
-        }
-            return false;
+    public void transfere(double valor, Conta destino) {
+//        if (this.saca(valor)){
+//            destino.deposita(valor);
+//            return true;
+//        }
+//            return false;
+        this.saca(valor);
+        destino.deposita(valor);
     }
 
     public double getSaldo(){ // pegaSaldo
