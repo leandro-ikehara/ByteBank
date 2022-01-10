@@ -1,4 +1,4 @@
-package br.com.alura.bytebank.java_pilha;
+package br.com.alura.bytebank.java_pilha.exception;
 
 public class MeuErro extends Exception
 {

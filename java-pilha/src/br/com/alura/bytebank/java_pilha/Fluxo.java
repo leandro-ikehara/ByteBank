@@ -1,5 +1,7 @@
 package br.com.alura.bytebank.java_pilha;
 
+import br.com.alura.bytebank.java_pilha.exception.MeuErro;
+
 public class Fluxo {
 
     public static void main(String[] args)
